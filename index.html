@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class='login'>
+        <h2>Sign in</h2>
+
+        <input name='username' placeholder='Username' type='text'/>
+        
+        <div>
+        <input type="radio" id='r1' class='remember' name="text-password" value="0"> Text<br>
+        <input type="radio" id='r2' class='remember' name="gp-password" value="1"> Graphical<br>
+        </div>
+        
+        <div id="div_name1" hidden>
+        <input id='pw' name='password' placeholder='Password' type='password'/></div>
+        
+        <div id="div_name2" hidden>
+                <div align="center">
+                        <div style="position:absolute; top: 400px; left: 500px;">
+                        <input type="checkbox" id="r1" onclick="function_r1()" /><input type="password" class="rcorners1" id="p1" ondrop="drop(event)" ondragover="allowDrop(event)" name="corner1" /></div>
+                        <div style=" position:absolute ;top:400px; right:200px" />
+                        <input type="checkbox" id="r2" onclick="function_r2()" /><input type="password"  class="rcorners1" id="p2" ondrop="drop(event)" ondragover="allowDrop(event)" name="corner2"/>
+                        </div>
+                        </div>
+    
+        <div align="center"/>
+        <script type = "text/javascript">
+        function triangles(n) {
+        n = Math.floor(n);
+        document.write("<pre>");
+        for (var i=3; i<=n; i++) {
+                   // var count=0;
+                  
+        for (var k=1; k<=i; k++) {
+        var loopEnd1 = Math.floor(Math.random() * 30)+1;
+                
+                 //    document.write(imgArray[c]);
+                  //   c++;
+                  document.write("<img draggable='true'ondrop='drop(event)' ondragover='allowDrop(event)' align='center' " + "src='images/" +(loopEnd1)+ ".png'>");
+                //document.write("<img align='center' "+"src='images/'"+i+"'.png'"+"height='40px' width='40px'/>");
+                //count++;
+                //document.write("*");
+                }
+                
+                document.write("<br>");
+                }
+                
+                //document.write("<br>");
+                
+                for (var i=4; i>=3; i--) {
+                    //var count = 0;
+                    
+                for (var k=i; k>=1; k--) {
+                   // count++;
+                   var loopEnd2 = Math.floor(Math.random()*30)+34;
+                //document.write("<img align='center' "+"src='images/'"+i+"'.png'""/>");
+                document.write("<img draggable='true' ondrop='drop(event)' ondragover='allowDrop(event)' align='center' " + "src='images/" +(loopEnd2)+ ".png'>");
+                //document.write(imgArray[c].src);
+                //c++;
+                //document.write("*");
+                }
+                 document.write("<br>");
+                
+                }
+                document.write("</pre>");
+                }
+                               
+                triangles(5); // 5 is number of rows in triangle
+                </script>
+                </div>
+                <div style="position:fixed;left:450px "><input type="checkbox" id="r3" onclick="function_r3()" /><input type="password" class="rcorners1" id="p3" ondrop="drop(event)" ondragover="allowDrop(event)" name="corner3"/></div>
+                <div style="position:fixed;right:400px ">
+                <input type="checkbox" id="r4" onclick="function_r4()" /> <input type="password" class="rcorners1" id="p4" ondrop="drop(event)" ondragover="allowDrop(event)" name="corner4"/>
+               
+                <button class="button" style="vertical-align:middle" onclick="reset"> <span>Rearrange</span> </button>
+                <button class="button" style="vertical-align:middle" onclick=""> <span>Next</span> </button>
+                <button class="button" style="vertical-align:middle" onclick="generate_pwd()"> <span>Submit</span> </button>
+              
+            </div>
+        </div>
+            
+        <div class='remember'>
+          <input checked='' id='remember' name='remember' type='checkbox'/>
+          <label for='remember'></label>Remember me
+        </div>
+        <input type='submit' value='Sign in'/>
+        <a class='forgot' href='#'>Forgot your password?</a>
+    </div>
+</div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+    background:cornsilk;
+    color: #46485c;
+    font-family: sans-serif;
+  }
+  
+  h2 {
+    color: #46485c;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #46485c;
+    text-decoration: none;
+  }
+  
+  .login {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -184px 0px 0px -155px;
+    background: rgba(59, 196, 59, 0.2);
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 250px;
+    padding: 25px 2px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(20,55,55,0.04);
+    outline: none;
+    color: #46485c;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #36435c;
+    content: "";
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 3px solid #252730;
+    box-shadow: 0px 0px 0px 2px #46485c;
+  }
+  
+  #remember:checked ~ label[for=remember] {
+    background: #b5cd60;
+    border: 3px solid #252730;
+    box-shadow: 0px 0px 0px 2px #b5cd60;
+  }
+  #r1:checked ~ label[for=text] {
+    background: #b5cd60;
+    border: 3px solid #252730;
+    box-shadow: 0px 0px 0px 2px #b5cd60;
+  }
+  #r2:checked ~ label[for=gp] {
+    background: #b5cd60;
+    border: 3px solid #252730;
+    box-shadow: 0px 0px 0px 2px #b5cd60;
+  }
+  
+  input[type="submit"] {
+    background: #b5cd60;
+    border: 0;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  input[type="submit"]:hover {
+    background: #16aa56;
+  }
+  
+  .forgot {
+    margin-top: 30px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .forgot:hover {
+    margin-top: 30px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: #6d7781;
+  }
+  
+  .remember {
+    padding: 30px 0px;
+    font-size: 12px;
+    text-indent: 25px;
+    line-height: 15px;
+  }
+  
+.rcorners1 {
+    border-radius: 50px;
+    background: #73A321;
+    border:2px solid crimson;
+    padding: 10px; 
+    width: 30px;
+    height: 30px;
+    flex-flow: wrap;
+    display: grid;    
+}
+
+.rcorners2 {
+    border-radius: 50px;
+    border: 2px solid cyan;
+    padding: 10px; 
+    width: 20px;
+    height: 20px;    
+}
+
+#rcorners3 {
+    border-radius: 50px;
+    background: url(paper.gif);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 10px; 
+    width: 20px;
+    height: 20px;    
+}
+img {
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    }
+body {
+    background-image: url("images.jpg");
+    background-color: #917c7c;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center top;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+  
+  ::-webkit-input-placeholder {
+    color: #46485c;
+  }
+  
+  [placeholder]:focus::-webkit-input-placeholder {
+    transition: all 0.2s linear;
+    transform: translate(10px, 0);
+    opacity: 0;
+  }
